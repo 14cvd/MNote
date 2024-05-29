@@ -24,6 +24,8 @@
 		006055E62C065650004F0999 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006055E52C065650004F0999 /* UIFont.swift */; };
 		006055E82C06568C004F0999 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006055E72C06568C004F0999 /* Date.swift */; };
 		006055EA2C06569A004F0999 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006055E92C06569A004F0999 /* String.swift */; };
+		B80B723E2C06F26A004FFD97 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80B723D2C06F26A004FFD97 /* CoreDataManager.swift */; };
+		B80B72402C06F66F004FFD97 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80B723F2C06F66F004FFD97 /* NoteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		006055E52C065650004F0999 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		006055E72C06568C004F0999 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		006055E92C06569A004F0999 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B80B723D2C06F26A004FFD97 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B80B723F2C06F66F004FFD97 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		003D9BA72C063C6C00B183D8 /* MNotes */ = {
 			isa = PBXGroup;
 			children = (
+				B80B723A2C06F206004FFD97 /* Data */,
 				003D9BE62C06420800B183D8 /* UIComponents */,
 				003D9BE02C0640FC00B183D8 /* Utilities */,
 				003D9BDE2C06401A00B183D8 /* Entity */,
@@ -252,6 +257,31 @@
 				006055E52C065650004F0999 /* UIFont.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		B80B723A2C06F206004FFD97 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B80B723C2C06F21F004FFD97 /* Services */,
+				B80B723B2C06F216004FFD97 /* Managers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B80B723B2C06F216004FFD97 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B80B723D2C06F26A004FFD97 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B80B723C2C06F21F004FFD97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B80B723F2C06F66F004FFD97 /* NoteService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +431,8 @@
 				003D9BE22C06416900B183D8 /* EditNoteVC.swift in Sources */,
 				006055E82C06568C004F0999 /* Date.swift in Sources */,
 				003D9BAB2C063C6C00B183D8 /* SceneDelegate.swift in Sources */,
+				B80B723E2C06F26A004FFD97 /* CoreDataManager.swift in Sources */,
+				B80B72402C06F66F004FFD97 /* NoteService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
